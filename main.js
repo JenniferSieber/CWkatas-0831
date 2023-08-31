@@ -10,10 +10,10 @@ console.log(howManySmaller([3.1288,3.1212,3.1205], 3.1212));
 // https://www.codewars.com/kata/57274562c8dcebe77e001012/train/javascript
 const cutIt = arr => {
   if (arr.length === 0) return null;
-  let shortest = arr[0]
+  let shortest = arr[0];
   arr.forEach(str => {
     if (str.length < shortest.length) {
-      shortest = str
+      shortest = str;
     }
   });
   return arr.map(str => str.slice(0, +shortest.length));
